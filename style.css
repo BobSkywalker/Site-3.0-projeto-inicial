@@ -1,0 +1,87 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+@font-face {
+  font-family: "KA";
+  src: url(Fontes/Starjedi.ttf) format(truetype);
+}
+body {
+  backdrop-filter: blur(5px);
+  height: 100vh;
+  overflow-x: hidden;
+  background-image: url(Imagens/Background.jpg);
+}
+header {
+  text-align: center;
+  background-color: #495ceb;
+  padding: 10px;
+  box-shadow: 1px 1px 10px black;
+}
+header h1 {
+  font-family: "KA";
+}
+header p {
+  font-family: KA;
+  font-size: large;
+}
+header a {
+  font-family: Arial;
+  font-weight: bolder;
+  text-decoration: none;
+  color: black;
+  margin: 10px;
+  padding: 4px;
+  transition: 0.5s;
+}
+header a:hover {
+  color: rgb(255, 0, 0);
+  background-color: #f0e02c;
+  border-radius: 10px;
+  margin: 10px;
+  transition: 0.5s;
+}
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.games {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  gap: 40px;
+  transition: 0.5s;
+}
+.game {
+  background-position: center;
+  background-size: cover;
+  width: 370px;
+  height: 550px;
+  border: solid blue;
+  box-shadow: 1px 1px 5px blue;
+  transition: 0.5s;
+}
+.games:hover .game {
+  filter: blur(10px);
+  width: 250px;
+  transition: 0.7s;
+}
+.games .game:hover {
+  transform: scale(1.07);
+  width: 350px;
+  filter: blur(0px);
+  transition: 0.7s;
+  box-shadow: 1px 1px 10px blue;
+}
+#game {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+}
+.imagens {
+  width: 400px;
+  height: 550px;
+}
